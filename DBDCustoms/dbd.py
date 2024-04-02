@@ -10,7 +10,7 @@ import dbd_art as art
 from os import system
 
 
-player_list = ['Tyler', 'Tim', 'Peyton']
+player_list = []
 all_killers = [
     'Trapper','Wraith','Hillbilly','Nurse','Shape','Hag','Doctor','Huntress','Cannibal','Nightmare','Pig','Clown','Spirit',
     'Legion','Plague','Ghost Face','Demogorgon','Oni','Deathslinger','Executioner','Blight','Twins','Trickster','Nemesis',
