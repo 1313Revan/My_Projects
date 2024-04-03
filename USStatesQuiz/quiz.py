@@ -25,10 +25,7 @@ while len(correct_guesses) < 50:
         answer_info = state_data[state_data.state == user_answer]
         writer.write_state(user_answer, answer_info.x, answer_info.y)
     elif user_answer == "Quit" or user_answer == "Exit":
-        missing_states = []
-        for state in all_states:
-            if state not in correct_guesses:
-                missing_states.append(state)
+        missing_states = [state for state in all_states if state not in correct_guesses]
         missing_states_data = pandas.DataFrame(missing_states)
         missing_states_data.to_csv("states_to_learn.csv")
 
